@@ -228,6 +228,7 @@
         <br>
         <div style="position:relative; left: 550px; font-size: 30px;">
             <p><b>WELCOME TO GCU SOCIAL WEBSITE</b></p>
+            <h1>{{user.email}}</h1>
         </div>
     </main>
 
