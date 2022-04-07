@@ -31,7 +31,12 @@ Login, body {
   }
   /*-------*/
 	
-
+  .logoLogIn {
+	position: absolute;
+	top: 120px;
+	left: 100px;
+   
+}
 
 @media screen and (min-width: 768px) {
 	
@@ -40,7 +45,8 @@ Login, body {
 	}
 }
 .rightside{
-    background-color: #8579D0;
+    background-color: #8579D0; 
+	
 }
 
 .leftside{
@@ -87,12 +93,21 @@ Login, body {
 	border-radius: 8px;
 	margin-bottom: 20px;
 }
+.b3li{
+	width: 90%;
+	max-width: 700px;
+	margin: 0p auto;
+	padding: 20px;
+	background-color: #8579D0; 
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
 
 .form-group{
 	width: 100%
 	margin-top 70px;
 	font-size: 20px;
-	border-bottom: solid 3px;
+	border-bottom: solid 3px ;
 	
 }
 

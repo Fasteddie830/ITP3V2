@@ -7,28 +7,31 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+  
 </head>
 
 <body>
-
     <!--  <style>
         body {
             background-color: #EAEEFF;
             no longer needed
         }
     </style>-->
-
     <div class="row no-gutters">
         <div class="col-md-6 no-gutters">
             <div class="leftside">
-                <br>
+                {{!-- <br> --}}
                 <h2 class="titleintro">
 
-                    <img src="images/Welcome.png" alt="Wepage  screen welcome vector" class="Image1">
+                    {{!-- <img src="images/Welcome.png" alt="Wepage  screen welcome vector" class="Image1">
                     <br>
                     <br>
 
-                    <img src="images/cyborg-1231.png" alt="Wepage  screen welcome vector" class="Image1">
+                    <img src="images/cyborg-1231.png" alt="Wepage  screen welcome vector" class="Image1"> --}}
+                    <img src="images/purpleboxwa.jpg" alt="Wepage  screen welcome vector" class="Image2"
+                        style="max-height:950px; opacity: 0.8;">
+                    
+                        <img src="images/GCUwhitelogo.png" alt="logo" class="logoLogIn" />
                 </h2>
 
             </div>
@@ -36,7 +39,7 @@
         <div class="col-md-6 no-gutters">
             <div class="rightside">
                 <div style="position:relative; left: 50px; top:250px;">
-                    <div class="b3">
+                    <div class="b3li">
                         <form action="/login" method="POST">
                             <div class="form-group">
                                 <label for="email"><b>Username/Email:</b></label>
@@ -49,13 +52,14 @@
                                 <input type="password" id="password" name="password" placeholder="Enter password">
                             </div>
                             <div class="signupInstead">
-                                <a href="signUp" style="color: rgb(255, 255, 255);"><i><u>Don't have an account?</u></i></a>
+                                <a href="signUp" style="color: rgb(255, 255, 255);"><i><u>Don't have an
+                                            account?</u></i></a>
                             </div>
                             <br><br>
                             <div style="position: relative; left: 250px;">
                                 <button type="submit" class="buttonstyle1">Submit</button>
                             </div>
-                         
+
                         </form>
                     </div>
                     <script>
