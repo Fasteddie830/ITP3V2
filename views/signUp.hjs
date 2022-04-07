@@ -22,14 +22,14 @@
             <div style="position:relative; left: 40px; ">
                 <div class="b3">
                     <form action="/register" method="POST">
-                        {{!-- <div class="form-group">
+                       <div class="form-group">
                             <label for="firstName"><b>First Name:</b></label>
                             <input type="firstName" id="firstName" name="firstName" placeholder="Enter First Name">
                         </div>
                         <div class="form-group">
                             <label for="lastName"><b>Last Name:</b></label>
                             <input type="lastName" id="lastName" name="lastName" placeholder="Enter Last Name">
-                        </div> --}}
+                        </div> 
                         <div class="form-group">
                             <label for="email"><b>Username/Email:</b></label>
                             <input type="email" id="eMail" name="email" placeholder="Enter email ending (@gcu.ac.uk)">
@@ -38,12 +38,12 @@
                             <label for="password"><b>Password:</b></label>
                             <input type="password" id="password" name="password" placeholder="Enter Password">
                         </div>
-                        {{!-- <div class="form-group">
+                        <div class="form-group">
                             <label for="password2"><b>Re-enter Password:</b></label>
                             <input type="password" id="password2" name="password2" placeholder="Re-enter Password">
-                        </div> --}}
-                        
-                        {{!-- <label for="birthdate" style="font-size: 20px;"><b>Date of Birth:</b></label>
+                        </div>
+
+                     <label for="birthdate" style="font-size: 20px;"><b>Date of Birth:</b></label>
                         <br>
                         <br>
                         <fieldset id="birthdate" style="position: relative; left: 230px;">
@@ -62,11 +62,11 @@
                             <input class="form-DOB" type="text" name="birthday_year" id="birthday_year" size="4"
                                 maxlength="4" value="" placeholder="YY" />
 
-                        </fieldset> --}}
+                        </fieldset> 
                         <br><br>
-                        {{!-- <div style="position: relative; left: 250px;"> --}}
+                        
                             <button type="submit" class="buttonstyle1">Submit</button>
-                       
+
                     </form>
                 </div>
             </div>
