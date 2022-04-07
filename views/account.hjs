@@ -48,11 +48,16 @@
             <img src="images/noprofil.jpg" width=300 height=300 alt="">
             <div class="round">
                 <input type="file">
-                <i class="fa fa-camera" style="color: #fff;"></i>
+                <i class="fa fa-camera" style="color: #fff; font-size: 30px; mrgin-top: 20px;"></i>
 
             </div>
         </div>
-
+        <div class="myAccountForm1">
+            <div class="formA2">
+                <h1 style="font-size: 10px;">Username/Email: {{user.email}}</h1>
+                <h1 style="font-size: 10px;">Password: {{user.password}}</h1>
+            </div>
+        </div>
         <div class="myAccountForm">
             <div class="formA1">
                 <form action="" id="myForm">

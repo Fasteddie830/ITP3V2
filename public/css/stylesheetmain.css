@@ -14,76 +14,26 @@ body {
 	position: relative;
 	float: left;
 }
-/*
-header ::after{
-	content: '';
-	display:table;
-	clear: both;
-}
 
-.logo {
-	float:left;
-	
-	
-}
-nav{
-	float: right;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li{
-	display: inline-block;
-	margin-left: 100px;
-	padding-top: 35px;
-	
+.myAccountForm1{
 	position: relative;
+	float: left;
+	margin-left: 3%;
 }
 
-.buttonstyle2{
-    font-size: 1.2em;
-	font-style:inherit;
-    padding:0.3em 1.2em;
-    border-radius:1.5em;
-    background-color: #8757EC;
-    color: white;
-    border: none;
-	box-shadow: 0px 0px 20px #00000010;
-    
-}
-
-
-nav ul > li  > a{
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
+.formA2{
 	
+	width: 90%;
+	max-width: 700px;
+	margin: 0p auto;
+	padding: 50px;
+	background-color: #F3F3F3;
+	margin-bottom: 20px;
+	margin-right: 40px;
+
 }
 
-nav ul > li  > a:hover {
-	color: #c63ae275
-}
 
-nav ul > li > a::before{
-	content:'';
-	display:block;
-	height:5px;
-	width: 0%;
-	background-color:#8757EC;
-
-    position: absolute;
-    top: 0;	
-	transition: all ease-in-out 250ms;
-}
-
-nav ul > li > a:hover::before{
-	width: 100%;
-}
-*/
 header{
 	position: fixed;
 	top: 0;
@@ -288,6 +238,8 @@ button[type="submit"]:hover{
 	margin-right: 40px;
 
 }
+
+
 
 .form-group{
 	width: 100%
