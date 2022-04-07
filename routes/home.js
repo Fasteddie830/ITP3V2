@@ -1,9 +1,23 @@
 const express = require('express');
-
 const router = express.Router();
+const User = require('../models/User')
 
 router.get('/', (req, res, next) => {
-    res.render('home', null);
+    const user = req.user
+    if(user == null){
+        res.redirect('/')
+        return
+    }
+
+    const data = {
+        user : user
+    }
+    res.render('home', data);
+})
+
+router.get('/logout', (req, res, next) => {
+    req.logout()
+    res.redirect('/')
 })
 
 

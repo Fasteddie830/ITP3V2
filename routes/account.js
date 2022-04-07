@@ -14,11 +14,6 @@ router.get('/', (req, res, next) => {
     }
 
     res.render('account', data)
-
-    //this is the user's old account page
-    /* res.json({
-        user: req.user || 'not logged in' //if reference is null, so if user is null, render not logged in instead
-    }) */
 })
 
 router.get('/logout', (req, res, next) => {
