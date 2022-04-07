@@ -64,9 +64,9 @@
 
                         </fieldset> --}}
                         <br><br>
-                        <div style="position: relative; left: 250px;">
+                        {{!-- <div style="position: relative; left: 250px;"> --}}
                             <button type="submit" class="buttonstyle1">Submit</button>
-                        </div>
+                       
                     </form>
                 </div>
             </div>

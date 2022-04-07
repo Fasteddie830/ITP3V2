@@ -29,7 +29,7 @@
 
                     <img src="images/cyborg-1231.png" alt="Wepage  screen welcome vector" class="Image1"> --}}
                     <img src="images/purpleboxwa.jpg" alt="Wepage  screen welcome vector" class="Image2"
-                        style="max-height:950px; opacity: 0.8;">
+                        style="max-height:950px; opacity: 0.75;">
                     
                         <img src="images/GCUwhitelogo.png" alt="logo" class="logoLogIn" />
                 </h2>
@@ -38,6 +38,7 @@
         </div>
         <div class="col-md-6 no-gutters">
             <div class="rightside">
+               
                 <div style="position:relative; left: 50px; top:250px;">
                     <div class="b3li">
                         <form action="/login" method="POST">
@@ -55,10 +56,10 @@
                                 <a href="signUp" style="color: rgb(255, 255, 255);"><i><u>Don't have an
                                             account?</u></i></a>
                             </div>
-                            <br><br>
-                            <div style="position: relative; left: 250px;">
+                            <br><br><br>
+                            {{!-- <div style="position: relative; left: 250px;"> --}}
                                 <button type="submit" class="buttonstyle1">Submit</button>
-                            </div>
+                            
 
                         </form>
                     </div>
