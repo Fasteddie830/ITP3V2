@@ -13,9 +13,9 @@
                 <div class="lnavbar">
                     <img src="images/GCUblacklogo.png" style = "max-height: 75px">
                     <div class="menu-icons">
-                        <img src="images/user.png">
-                        <img src="images/cart.png">
-                        <img src="images/menu.png">
+                        <img src="images/instagram.png">
+                        <img src="images/facebook.png">
+                        <img src="images/twitter.png">
                     </div>
 
                 </div>
@@ -57,7 +57,7 @@
         </script>
 
         <div class="copyright">
-
+         <p >Group4 © 2022</p>
         </div>
     </body>
 </html>
