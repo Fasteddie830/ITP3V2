@@ -66,10 +66,18 @@ module.exports = (passport) => {
             if (user != null){
                 return next(new Error('User already exists, please log in.'))
             }
+            
+            var firstNameField = req.body.firstName
+            var lastNameField = req.body.lastName
+            var birthDateField = req.body.birthday_day
+            var birthMonthField = req.body.birthday_month
+            var birthYearField = req.body.birthday_year
+
+        
 
             //create new user if user is not in database
             const hashedPw = bcryptjs.hashSync(password, 10) //this encrypts user password using the Bcrypt library, and the 10 indicates 10 saltrounds, 10 rounds of encoding. 
-            User.create({email:email, password: hashedPw}, (err, user) => {
+            User.create({email:email, password: hashedPw, firstName: firstNameField, lastName: lastNameField, birthday_day: birthDateField, birthday_month: birthMonthField, birthday_year: birthYearField }, (err, user) => {
                 if(err)
                     return next(err)
                 
