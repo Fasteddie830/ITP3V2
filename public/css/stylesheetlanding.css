@@ -55,7 +55,7 @@
 }
 
 .menu-icons img{
-	width: 20px;
+	width: 30px;
 	margin-left: 40px;
 	cursor: pointer;
 }
@@ -101,5 +101,12 @@ button:hover{
 .buttonText a{
 	color: #fff;
 	text-decoration: none;
+}
+
+.copyright{
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+	background-color:#020202;
 }
 /* End Landing page */
