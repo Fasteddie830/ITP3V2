@@ -50,18 +50,18 @@
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <div class="postingSystem">
-        <form action="/event" METHOD="POST">
+        <form action="/events" METHOD="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="eventTitle"><b>Event Title:</b></label>
-                <input type="text" id="eventTitle" name="eventTitle">
+                <label for="Title"><b>Event Title:</b></label>
+                <input type="text" id="Title" name="Title">
             </div>
             <br>
             <div class="form-group">
-                <label for="description"><b>Description:</b></label>
-                <textarea name="description" id="description" cols="30" rows="5" placeholder="Enter event description here"></textarea>
+                <label for="Description"><b>Description:</b></label>
+                <textarea name="Description" id="Description" cols="30" rows="5" placeholder="Enter event description here"></textarea>
             </div>
 
-            <input class="file-upload-input" id="image" type="file" onchange;="readURL(this)" accept="Image/*">
+            <input class="file-upload-input" id="image" name="image" value="" type="file" onchange;="readURL(this)" accept="Image/*">
 
                 <button type="submit" class="buttonstylepost">POST</button>
      
@@ -121,8 +121,54 @@ window.onclick = function(event) {
   
     <main>
         <!--cards -->
-
+        <% items.forEach(function(image) { %>
         <div class="card">
+            <div class="image">
+                <div>
+                    
+                        <div>
+                            <div>
+                                <img src="data:image/<%=image.img.contentType%>;base64,
+                                 <%=image.img.data.toString('base64')%>">
+                                <div>
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="title">
+                <h1><%= image.Title %></h1>
+            </div>
+            <div class="des">
+                <p><%= image.Description %></p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <% }) %>
+        <!--cards -->
+
+
+       <!--  <div class="card">
+
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+                <h1>
+                    Write title Here</h1>
+            </div>
+            <div class="des">
+                <p>You can Add Desccription Here...</p>
+                <button>Read More...</button>
+            </div>
+        </div> -->
+        <!--cards -->
+
+
+        <!-- <div class="card">
 
             <div class="image">
                 <img
@@ -136,11 +182,11 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
+        </div> -->
         <!--cards -->
 
 
-        <div class="card">
+        <!-- <div class="card">
 
             <div class="image">
                 <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
@@ -153,29 +199,11 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
+        </div> -->
         <!--cards -->
 
 
-        <div class="card">
-
-            <div class="image">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
-            </div>
-            <div class="title">
-                <h1>
-                    Write title Here</h1>
-            </div>
-            <div class="des">
-                <p>You can Add Desccription Here...</p>
-                <button>Read More...</button>
-            </div>
-        </div>
-        <!--cards -->
-
-
-        <div class="card">
+        <!-- <div class="card">
 
             <div class="image">
                 <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
@@ -188,11 +216,10 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
+        </div> -->
         <!--cards -->
 
-
-        <div class="card">
+        <!-- <div class="card">
 
             <div class="image">
                 <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
@@ -205,10 +232,11 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
+        </div> -->
         <!--cards -->
 
-        <div class="card">
+
+        <<!-- div class="card">
 
             <div class="image">
                 <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
@@ -221,46 +249,11 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
-        <!--cards -->
-
-        <div class="card">
-
-            <div class="image">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
-            </div>
-            <div class="title">
-                <h1>
-                    Write title Here</h1>
-            </div>
-            <div class="des">
-                <p>You can Add Desccription Here...</p>
-                <button>Read More...</button>
-
-            </div>
-        </div>
+        </div> -->
         <!--cards -->
 
 
-        <div class="card">
-
-            <div class="image">
-                <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
-            </div>
-            <div class="title">
-                <h1>
-                    Write title Here</h1>
-            </div>
-            <div class="des">
-                <p>You can Add Desccription Here...</p>
-                <button>Read More...</button>
-            </div>
-        </div>
-        <!--cards -->
-
-
-        <div class="card">
+<!--         <div class="card">
 
             <div class="image">
                 <img src="https://cdn.pixabay.com/photo/2015/11/07/11/41/lake-1031405_1280.jpg">
@@ -273,7 +266,7 @@ window.onclick = function(event) {
                 <p>You can Add Desccription Here...</p>
                 <button>Read More...</button>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <br>

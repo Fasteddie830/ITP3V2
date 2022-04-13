@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploading</title>
+</head>
+
+<body>
+    <h1>To Upload Image on mongoDB</h1>
+    <hr>
+    <div>
+        <form action="/test1" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="Title">Image Title</label>
+                <input type="text" id="Title" placeholder="Title" value="" name="Title" required>
+            </div>
+            <div>
+                <label for="Description">Image Description</label>
+                <textarea id="Description" name="Description" value="" rows="2" placeholder="Description" required>
+                </textarea>
+            </div>
+            <div>
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image" value="" required>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <h1>Uploaded Images</h1>
+    <div>
+        <% items.forEach(function(image) { %>
+            <div>
+                <div>
+                    <img src="data:image/<%=image.img.contentType%>;base64,
+                     <%=image.img.data.toString('base64')%>">
+                    <div>
+                        <h5>
+                            <%= image.Title %>
+                        </h5>
+
+
+
+                        <p>
+                            <%= image.Description %>
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</body>
+
+</html>
