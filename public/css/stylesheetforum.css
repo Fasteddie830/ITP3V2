@@ -135,8 +135,9 @@ button[type="submit"]:hover{
 }
 
 .form-group{
-	width: 100%
-	margin-top 70px;
+	top: 25%;
+	width: 100%;
+	margin-top: 70px;
 	font-size: 20px;
 	border-bottom: solid 3px;
 	
@@ -361,11 +362,13 @@ button[type="submit"]:hover{
 .wrapper {
 	height: 100%;
 	width: 100%;
-	height: 100vh;
+	/* height: 100vh; */
+	padding-top: 30%;
   }
   
   .forum_post {
 	position: relative;
+	margin: 25px 0px 25px 0px;
 	padding: 6rem 3rem 6rem 6rem;
 	background: #fff;
 	max-width: 1100px;
@@ -436,3 +439,72 @@ button[type="submit"]:hover{
 	box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
   }
   
+  .myBtn{
+	border-radius: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.postingSystem{
+	top: 25%;
+	position: relative;
+	width: 90%;
+	max-width: 700px;
+	border-radius: 1%;
+	margin: 0p auto;
+	padding: 50px;
+	background-color: #F3F3F3;
+	margin-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.form-group{
+	width: 100%
+	margin-top 70px;
+	font-size: 17px;
+	border-bottom: solid 3px;
+	
+}
+
+.form-group input,
+.form-group textarea{
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	background-color: #F3F3F3;
+	border: #F3F3F3;
+}
+
+.file-upload-input{
+ font-size: 16px;
+ background-color: white;
+ border-radius: 50px;
+ width: 320px;
+ outline: none;
+}
+
+::-webkit-file-upload-button{
+ color: white;
+ background-color: #654ea3;
+ padding: 10px;
+ border: none;
+ border-radius: 50px;
+ box-shadow: 1px 0 1px 1px #6b4559;
+ outline: none;
+ resize: none;
+}
+
+.buttonstylepost{
+	position: relative;
+	left: 210px;
+}
+
+button[type="submit"]:hover{
+	background-color: rgb(210, 151, 238);
+	
+}
