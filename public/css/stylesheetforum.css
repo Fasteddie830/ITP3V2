@@ -422,15 +422,16 @@ button[type="submit"]:hover{
 	color: #333;
   }
   
-  .btn_primary {
+  .myBtn {
 	border: none;
 	outline: none;
-	background: linear-gradient(90deg, #ff9966, #ff5e62);
+	background: linear-gradient(90deg, #ff66f5, #b134f5);
 	padding: 1.5rem 2rem;
 	border-radius: 50px;
 	color: white;
 	font-size: 1.2rem;
-	box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+	font-style: oblique;
+	box-shadow: 1px 10px 2rem rgba(0, 0, 0, 0.2);
 	transition: all .2s ease-in;
 	text-decoration: none;
   }

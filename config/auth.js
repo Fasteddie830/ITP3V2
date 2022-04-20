@@ -88,3 +88,9 @@ module.exports = (passport) => {
 
     passport.use('localRegister', localRegister);
 }
+
+// const localUpdate = new LocalStrategy({
+//     usernameField: 'email',
+//         passwordField: 'password',
+//         passReqToCallback: true
+// })
