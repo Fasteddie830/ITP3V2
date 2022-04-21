@@ -16,7 +16,8 @@ body {
 	background: #eaafc8;
 	background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
 	background: linear-gradient(to right, #eaafc8, #654ea3);
-	min-height: 100vh;
+	min-height: 100vh; 
+	
   }
 
   header{
@@ -364,19 +365,22 @@ button[type="submit"]:hover{
 	width: 100%;
 	/* height: 100vh; */
 	padding-top: 30%;
+	
   }
   
   .forum_post {
 	position: relative;
 	margin: 25px 0px 25px 0px;
 	padding: 6rem 3rem 6rem 6rem;
-	background: #fff;
+	background-color: #FFEFFF;
 	max-width: 1100px;
 	border-radius: 10px;
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+	border: black;
+	border-style: double;
   }
   
   .img_pod {
@@ -425,15 +429,16 @@ button[type="submit"]:hover{
   .myBtn {
 	border: none;
 	outline: none;
-	background: linear-gradient(90deg, #ff66f5, #b134f5);
+	background: linear-gradient(90deg, #ff9966, #ff5e62);
 	padding: 1.5rem 2rem;
-	border-radius: 50px;
+	border-radius: 25px;
 	color: white;
 	font-size: 1.2rem;
 	font-style: oblique;
 	box-shadow: 1px 10px 2rem rgba(0, 0, 0, 0.2);
 	transition: all .2s ease-in;
 	text-decoration: none;
+	width: 25%;
   }
   
   .btn_primary:hover {

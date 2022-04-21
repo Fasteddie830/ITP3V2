@@ -53,15 +53,20 @@
 
 
             <% items.forEach(function(image) { %>
+                
                 <div class="forum_post">
+                    <div class="img_pod">
+                        <img src="images/GCUblacklogo.png" alt="noprofile images" style="background-color: black;">
+                    </div>
                     <div>
                         <%= image.firstName %>
                             <%= image.lastName %>
                     </div>
                     <div class="container_copy">
                         <h1>
-                            <p>
-                                <i>Title:</i> <%= image.Title %>
+                            <p style="font-size: 30px;">
+                                <i>Title:</i> 
+                                <%= image.Title %>
                             </p>
                         </h1>
                     </div>
@@ -70,7 +75,7 @@
                             <i>Comment:</i> <%= image.Description %>
                         </p>
 
-                        <h3 style="position: relative; float: right; font-size: 12px;">
+                        <h3 style="position: relative; float: right; font-size: 12px; color: #ff9966;">
                             <i>Date Posted:</i> <%= image.timestamp %>
                         </h3>
                     </div>
@@ -198,7 +203,7 @@
                             <li>Dramane Kone</li>
                             <li>Kevin Chika Urama</li>
                             <li> Abdalwahab Al Balili </li>
-                            <li> <a href="http://dancvsite.s3-website-eu-west-1.amazonaws.com/">Daniel Nemeth</a></li>
+                            <li> <a href="http://dancvsite.s3-website-eu-west-1.amazonaws.com/" style="color: white;">Daniel Nemeth</a></li>
                             <li>Adeel Hamid</li>
                             <li></a>Monica Onyinye Ndubuisi</li>
                             

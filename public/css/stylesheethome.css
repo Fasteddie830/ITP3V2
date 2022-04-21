@@ -14,12 +14,13 @@ header{
 	width: 100%;
 	padding-left: 16%;
 	padding-right: 25%;
-	
     justify-content: center; 
-	
-    
+
 } 
 
+.forum_post{
+	background-color: #FFE2FE;
+}
 /*
 header ::after{
 	content: '';
