@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <img src="images/GCUblacklogo.png" alt="logo" class="logo">
         <ul>
             <li><a href="Home">HOME</a></li>
@@ -209,6 +209,8 @@
             requestAnimationFrame(animate);
         }
         animate();
+
+        var prevScrollpos = window.pageYOffset; window.onscroll = function () { var currentScrollPos = window.pageYOffset; if (prevScrollpos > currentScrollPos) { document.getElementById("navbar").style.top = "0"; } else { document.getElementById("navbar").style.top = "-50px"; } prevScrollpos = currentScrollPos; }
     </script>
     <main>
 
@@ -231,24 +233,15 @@
             <h1 style="position:relative; left: 150px; font-size: 20px;">{{user.firstName}} {{user.lastName}}!!</h1>
         </div>
         <div>
-             <section class="video-wrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/cAEFANT4xa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </section>
+            <section class="video-wrapper">
+                <iframe width="900" height="315" src="https://www.youtube.com/embed/cAEFANT4xa0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
         </div>
-       
+
     </main>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
 
     <div class="footer-dark">
         <footer>
@@ -257,17 +250,22 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>SERVICES</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="home">Home</a></li>
+                            <li><a href="forum">Forum</a></li>
+                            <li><a href="events">Events</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>ABOUT</h3>
                         <ul>
                             <li><a href="#">Group4</a></li>
-                            <li><a href="#">Members</a></li>
-                            <li><a href="#"></a>???</li>
+                            <li>Dramane Kone</li>
+                            <li>Kevin Chika Urama</li>
+                            <li> Abdalwahab Al Balili </li>
+                            <li> <a href="http://dancvsite.s3-website-eu-west-1.amazonaws.com/">Daniel Nemeth</a></li>
+                            <li>Adeel Hamid</li>
+                            <li></a>Monica Onyinye Ndubuisi</li>
+                            
                         </ul>
                     </div>
 

@@ -10,9 +10,15 @@ header{
 
 .video-wrapper{
     margin: 5% 5% 5% 5%;
-    justify-content: center;
+	position: relative;
+	width: 100%;
+	padding-left: 16%;
+	padding-right: 25%;
+	
+    justify-content: center; 
+	
     
-}
+} 
 
 /*
 header ::after{
@@ -221,7 +227,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 canvas {
     position:absolute;
