@@ -8,6 +8,11 @@ header{
 	float: left;
 }
 
+.video-wrapper{
+    margin: 5% 5% 5% 5%;
+    justify-content: center;
+    
+}
 
 /*
 header ::after{

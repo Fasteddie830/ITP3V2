@@ -140,9 +140,9 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>SERVICES</h3>
                         <ul>
-                            <li><a href="#">?????</a></li>
-                            <li><a href="#">?????</a></li>
-                            <li><a href="#">?????</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Event</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -150,7 +150,7 @@
                         <ul>
                             <li><a href="#">Group4</a></li>
                             <li><a href="#">Members</a></li>
-                            <li><a href="#"></a>???</li>
+                
                         </ul>
                     </div>
                     <div class="col-md-6 item text">

@@ -230,6 +230,12 @@
             <p><b>WELCOME TO GCU SOCIAL WEBSITE</b></p>
             <h1 style="position:relative; left: 150px; font-size: 20px;">{{user.firstName}} {{user.lastName}}!!</h1>
         </div>
+        <div>
+             <section class="video-wrapper">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/cAEFANT4xa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </section>
+        </div>
+       
     </main>
 
     <br>
@@ -251,9 +257,9 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>SERVICES</h3>
                         <ul>
-                            <li><a href="#">?????</a></li>
-                            <li><a href="#">?????</a></li>
-                            <li><a href="#">?????</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#"></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
