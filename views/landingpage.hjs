@@ -24,8 +24,8 @@
                     <h1>WELCOME TO THE GCU SOCIAL PLATFORM</h1>
                     <h3>Please login if you already have an account or register if you don't have one already</h3>
                     <div>
-                      <button type="button" class="buttonText"><a href="login"> LOGIN</a></button>
-                      <button type="button" class="buttonText"><a href="signUp">REGISTER</a></button>
+                      <a href="login"><button type="button" class="buttonText"> LOGIN</button></a>
+                      <a href="signUp"><button type="button" class="buttonText">REGISTER</button></a>
                     </div>
                 </div>
 

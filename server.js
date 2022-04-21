@@ -22,6 +22,7 @@ const signUp = require('./routes/signUp');
 const events = require('./routes/events');
 const forum = require('./routes/forum');
 const test1 = require('./routes/test1');
+const update = require('./routes/update');
 
 
 //mongoose connects to our database using the database address and a callback for confirmation
@@ -138,6 +139,7 @@ app.use('/signUp', signUp)
 app.use('/events', events)
 app.use('/forum', forum)
 app.use('/test1', test1)
+app.use('/Update', update)
 
 
 
