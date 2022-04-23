@@ -53,7 +53,7 @@
 
 
             <% items.forEach(function(image) { %>
-                
+
                 <div class="forum_post">
                     <div class="img_pod">
                         <img src="images/GCUblacklogo.png" alt="noprofile images" style="background-color: black;">
@@ -65,18 +65,20 @@
                     <div class="container_copy">
                         <h1>
                             <p style="font-size: 30px;">
-                                <i>Title:</i> 
+                                <i>Title:</i>
                                 <%= image.Title %>
                             </p>
                         </h1>
                     </div>
                     <div class="des">
                         <p>
-                            <i>Comment:</i> <%= image.Description %>
+                            <i>Comment:</i>
+                            <%= image.Description %>
                         </p>
 
                         <h3 style="position: relative; float: right; font-size: 12px; color: #ff9966;">
-                            <i>Date Posted:</i> <%= image.timestamp %>
+                            <i>Date Posted:</i>
+                            <%= image.timestamp %>
                         </h3>
                     </div>
                 </div>
@@ -91,10 +93,10 @@
                             <div class="postingSystem">
                                 <form action="/forum" METHOD="POST" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <label for="Title"><b>Event Title:</b></label>
+                                        <label for="Title"><b>Title:</b></label>
                                         <input type="text" id="Title" name="Title">
                                     </div>
-                                    <br>
+
                                     <div class="form-group">
                                         <label for="Description"><b>Description:</b></label>
                                         <textarea name="Description" id="Description" cols="30" rows="5"
@@ -104,7 +106,8 @@
                                     <!-- <input class="file-upload-input" id="image" name="image" value="" type="file"
                                         onchange;="readURL(this)" accept="Image/*"> -->
 
-                                    <button type="submit" class="buttonstylepost">POST</button>
+                                    <button type="submit" class="buttonstylepost1"
+                                        style="border-radius: 25em; position: relative; margin-left: auto; margin-right: auto; background-color: black; color: white; padding-left: 35px; padding-right: 35px;">POST</button>
 
 
                                 </form>
@@ -203,16 +206,18 @@
                             <li>Dramane Kone</li>
                             <li>Kevin Chika Urama</li>
                             <li> Abdalwahab Al Balili </li>
-                            <li> <a href="http://dancvsite.s3-website-eu-west-1.amazonaws.com/" style="color: white;">Daniel Nemeth</a></li>
+                            <li> <a href="http://dancvsite.s3-website-eu-west-1.amazonaws.com/"
+                                    style="color: white;">Daniel Nemeth</a></li>
                             <li>Adeel Hamid</li>
                             <li></a>Monica Onyinye Ndubuisi</li>
-                            
+
                         </ul>
                     </div>
 
                     <div class="col-md-6 item text">
                         <h3>GROUP 4</h3>
-                        <p class="footernote">Thank you for using the GCU Social Platform. We are very grateful for you using our work. Let
+                        <p class="footernote">Thank you for using the GCU Social Platform. We are very grateful for you
+                            using our work. Let
                             us know what you think about the platform. </p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i

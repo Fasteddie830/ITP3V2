@@ -223,8 +223,8 @@
         <div id="mySidenav" class="sidenav">
             <a href="Events" id="tutoring">EVENTS</a>
             <a href="Forum" id="qanda">FORUM</a>
-            <a href="Account." id="modules">ACCOUNT</a>
-            <a href="#" id="discussions">CHAT</a>
+            <a href="Account" id="modules">ACCOUNT</a>
+            <a href="chat" id="discussions">CHAT</a>
         </div>
         <br>
         <br>
