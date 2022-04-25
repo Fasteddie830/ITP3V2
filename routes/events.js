@@ -47,6 +47,10 @@ router.get('/logout', (req, res, next) => {
     res.redirect('/')
 })
 
+/* router.get('/chat', (err) => {
+    return next(new Error('not yet implemented'))
+}) */
+
 
 
 router.post('/', upload.single('image'), (req, res, next) => {

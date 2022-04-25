@@ -21,4 +21,10 @@ router.get('/logout', (req, res, next) => {
 })
 
 
+/* router.get('/chat', (err) => {
+    return next(new Error('not yet implemented'))
+}) */
+
+
+
 module.exports = router;
