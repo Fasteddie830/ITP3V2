@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/stylesheetevents.css">
 </head>
 
@@ -61,7 +62,7 @@
                 <textarea name="Description" id="Description" cols="30" rows="5" placeholder="Enter event description here"></textarea>
             </div>
 
-            <label for="birthdate" style="font-size: 20px;"><b>Date of Event:</b></label>
+            <label for="date" style="font-size: 20px;"><b>Date of Event:</b></label>
                         <br>
                         <br>
                         <fieldset id="date" style="position: relative; left: 230px;">
@@ -71,7 +72,7 @@
                                 maxlength="2" value="" placeholder="DD" />
 
 
-                            <label for="birthday_month" class="offset"></label>
+                            <label for="day_month" class="offset"></label>
                             <input class="form-DOB" type="text" name="day_month" id="day_month" size="2"
                                 maxlength="2" value="" placeholder="MM" />
 
@@ -165,6 +166,9 @@ window.onclick = function(event) {
             </div>
             <div class="des">
                 <p><%= image.Description %></p>
+                <p><%= image.day_day %>/<%= image.day_month %>/<%= image.day_year %></p>
+                <p style="position: relative; float: right; font-size: 12px; color: rgb(155, 155, 155);"><%= image.timestamp %></p>
+                
                 <button>Read More...</button>
             </div>
         </div>
