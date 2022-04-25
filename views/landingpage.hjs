@@ -2,6 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GCU Social Platform</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="css/stylesheetlanding.css">
     </head>
     <body onload="slider()">
@@ -36,10 +37,12 @@
             var slideImg = document.getElementById("slideImg");
 
             var images = new Array(
-                "images/img1.jpg",
-                "images/img2.jpg",
-                "images/img3.jpg",
-                "images/img4.jpg"
+                "images/landingpage/GCU1.png",
+                "images/landingpage/GCU2.png",
+                "images/landingpage/GCU3.png",
+                "images/landingpage/GCU4.png",
+                "images/landingpage/GCU5.png",
+                
             );
 
         var len = images.length;
