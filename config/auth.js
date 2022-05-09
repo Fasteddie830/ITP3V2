@@ -58,7 +58,7 @@ module.exports = (passport) => {
         passwordField: 'password',
         passReqToCallback: true
     }, (req, email, password, next) => {
-        User.findOne({ email: email}, (err, user) => {     //return either an error or found users
+        User.findOne({ email: email}, (err, user) => {     //return either an error or found users.
             if (err) {
                 return next(err)
             }
